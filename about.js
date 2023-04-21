@@ -1,14 +1,20 @@
 console.log("hello world");
 
+let form = document.querySelector('#contact');
+let img = document.querySelector('img')
+
 
 
 function handleSubmit(evt) {
 	evt.preventDefault();
 	
-	console.log('form submit');
+	alert(`The form has been submited successfully`)
+}
+
+let mouseOverPic = (e) => {
+	alert('You are so beautiful you silly duck')
 }
 
 
-let form = document.querySelector('#contact');
-
 form.addEventListener('submit', handleSubmit);
+img.addEventListener('mouseover', mouseOverPic)
