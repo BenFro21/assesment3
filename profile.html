@@ -8,18 +8,23 @@
     <title>Profile Page</title>
 </head>
 <body>
-
-     <nav>
-        <ol>
-            <li class="crumb"><a href="./home.html">Home</a></li>
-            <li class="crumb"><a href="./profile.html">Profile</a></li>
-            <li class="crumb"><a href="./about.html">About</a></li>
-         </ol>
-     </nav>
+	<nav>
+		<ol>
+	        <li class="crumb"><a href="./home.html">Home</a></li>
+	        <li class="crumb"><a href="./profile.html">Profile</a></li>
+	        <li class="crumb"><a href="./about.html">About</a></li>
+	        <li class="crumb"><a href="./neighborhood.html">Neighborhood</a></li>
+	    </ol>
+	</nav>
     <main>
         <header class="header">
             <h1 class="title">Benjamin Broad's Profile</h1>
             <img class="img" src="./Close_up_edit.jpg" alt="Family Pic">
+            <section class="btn-section">
+            <button class="btn" id="color">My Favorite Color</button>
+            <button class="btn" id="place">My Favorite Place</button>
+            <button class="btn" id="ritual">My Favorite Ritual</button>
+        </section>
         </header>
         <section class="information-container">
             <section class="information-skills">
@@ -52,13 +57,9 @@
                 </p>
             </section>
         </section>
-            
-
     </main>
-
-
-    
     <a href="./home.html"><< Back </a>
+    <script src="./profile.js"></script>
 </body>
 </html>
 

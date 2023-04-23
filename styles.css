@@ -5,6 +5,7 @@ body {
   max-width: 500px;
   margin: 2rem auto;
   font-family: "Open Sans", sans-serif;
+  background-color: #BCBDC0;
 
 }
 
@@ -34,17 +35,121 @@ input {
 	display: block;
 }
 
-img {
-	max-width: 300px;
-}
 
-.title{
+.title, .h1-head{
+	text-align: center;
+	color: #5C415D;
 
 }
 
 .img{
+	max-width: 300px;
+	position: relative;
+	left:20%;
+	bottom: 40%;
+	border-radius: 80px;
+}
+
+.tc-pic{
+	max-width: 200vw;
+	max-height: 30vh;
+	position: relative;
+	left: 150px;
+	border-radius: 25px;
+}
+
+.btn-section{
+	display: flex;
+	justify-content: space-around;
+}
+
+.btn{
+	border: none;
+
+
+	border-radius: 25px;
+	padding: 10px;
 
 }
+
+.btn {
+	position: relative;
+	background-color: yellow;
+	border: none;
+	font-size: 15px;
+	font-weight: 500;
+	color:#5C415D;
+	padding: 20px;
+	width: 200px;
+	text-align: center;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	text-decoration: none;
+	overflow: hidden;
+	cursor: pointer;
+  }
+  
+  .btn:after {
+	content: "";
+	background: #5C415D;
+	display: block;
+	position: absolute;
+	padding-top: 300%;
+	padding-left: 350%;
+	margin-left: -20px!important;
+	margin-top: -120%;
+	opacity: 0;
+	transition: all 0.8s
+  }
+  
+  .btn:active:after {
+	padding: 0;
+	margin: 0;
+	opacity: 1;
+	transition: 0s
+  }
+
+  
+.random-Btn {
+	position: relative;
+	left:175px;
+	background-color: yellow;
+	border: none;
+	font-size: 15px;
+	font-weight: 500;
+	color:#5C415D;
+	padding: 20px;
+	width: 200px;
+	text-align: center;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	text-decoration: none;
+	overflow: hidden;
+	cursor: pointer;
+  }
+  
+  .random-Btn:after {
+	content: "";
+	background: #5C415D;
+	display: block;
+	position: absolute;
+	padding-top: 300%;
+	padding-left: 350%;
+	margin-left: -20px!important;
+	margin-top: -120%;
+	opacity: 0;
+	transition: all 0.8s
+  }
+  
+  .random-Btn:active:after {
+	padding: 0;
+	margin: 0;
+	opacity: 1;
+	transition: 0s
+  }
+
+
+
 
 ul{
 	list-style: none;
@@ -57,7 +162,6 @@ li{
 
 /* section holding 3 info sections */
 .information-container{
-	display: flex;
 
 }
 /* section holding skills */
@@ -66,22 +170,39 @@ li{
 }
 /* h3 headers */
 .information-header{
+	text-align: center;
+	color: #5C415D;
 
 }
 /* ul hold skill li */
-.skills-container{
+.skills-container, .links-ul, .p-head{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	color: #38A3A5;
+	background-color: #BCBDC0;
 
+}
+.p-head{
+	font-size: 28px;
 }
 /* Li's */
 .skill{
+
 
 }
 /*section holding interest */
 .information-interests{
 
+
 }
 /* ul holding intrests */
 .interests{
+	display: flex;
+	flex-wrap: wrap;
+	color: #38A3A5;
+	justify-content: space-evenly;
+	/* align-items: center; */
 
 }
 /* Li for interest */
@@ -90,9 +211,13 @@ li{
 }
 /* section holdering career info */
 .information-career{
-
+	
 }
 /* p tag holding carrer info */
 .careerGoalsP{
+	display: flex;
+	flex-wrap: wrap;
+	color: #38A3A5;
+	justify-content: center;
 
 }
